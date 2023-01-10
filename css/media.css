@@ -1,0 +1,41 @@
+@media (max-width: 40.75em) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+      "header"
+      "pricing"
+      "features";
+  }
+
+  .heading {
+    padding: 28px 24px 0;
+  }
+
+  .primary {
+    font-size: 1.25rem;
+  }
+
+  .secondary {
+    font-size: 0.9375rem;
+  }
+
+  .text {
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+
+  .pricing {
+    padding: 24px 24px 0;
+  }
+
+  .btn:link,
+  .btn:visited {
+    margin-bottom: 1.5rem;
+  }
+
+  .features {
+    padding: 24px 24px 0;
+  }
+}

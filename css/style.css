@@ -1,0 +1,173 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-size: 16px;
+  padding: 30px;
+  font-family: "Karla", sans-serif;
+  background: #e6eff5;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  max-width: 39.6875rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 15px 30px 0px #0051ab26;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 216px 1fr;
+  grid-template-areas:
+    "header header"
+    "pricing features";
+}
+
+.heading {
+  padding: 40px 40px 0;
+  grid-area: header;
+  background: #fff;
+}
+
+.primary {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #2ab3b1;
+  margin-bottom: 1.5rem;
+}
+
+.secondary {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.22px;
+  color: #c0df33;
+  margin-bottom: 0.6875rem;
+}
+
+.text {
+  letter-spacing: -0.2px;
+  line-height: 1.6;
+  color: #9aa7be;
+}
+
+.pricing {
+  padding: 40px 40px 0;
+  background: #2ab2af;
+  color: #fff;
+}
+
+.pricing-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.22px;
+  margin-bottom: 1.125rem;
+}
+
+.price-flex {
+  display: flex;
+  gap: 0.6875rem;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.price-tag {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.price-per {
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+}
+
+.price-text {
+  letter-spacing: -0.2px;
+  margin-bottom: 1.625rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-align: center;
+  /* padding: 11px 89px; */
+  padding: 11px 0;
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #fff;
+  background: #c0df33;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px #00000019;
+  text-decoration: none;
+  margin-bottom: 2.4375rem;
+}
+
+.btn:hover,
+.btn:active {
+  background: rgba(192, 223, 51, 0.834);
+  box-shadow: 0px 10px 15px 0px #00000019;
+}
+
+.features {
+  padding: 40px 40px 0;
+  background: #2ab2af;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.features-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.22px;
+  margin-bottom: 1.125rem;
+}
+
+.features-list {
+  font-size: 0.875rem;
+  font-weight: 400;
+  list-style: none;
+  letter-spacing: -0.17px;
+  opacity: 0.75;
+}
